@@ -43,7 +43,7 @@ func main() {
 
 	case "cat-file":
 		catfile.Parse(os.Args[2:])
-		blobReader(catfile.Args()[1])
+		blobReader(catfile.Args()[0])
 
 		if *catPara {
 			// display the content types
